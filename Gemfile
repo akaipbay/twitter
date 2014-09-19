@@ -47,3 +47,5 @@ end
 group :development do
   gem 'sqlite3', '1.3.8'
 end
+
+gem 'bootstrap-sass', '2.3.2.0'
