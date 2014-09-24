@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
+  
+  resources :users
+  resources :shared
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
